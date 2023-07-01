@@ -1,0 +1,185 @@
+ 
+    <section class="content-header">
+      <h1>
+        Home
+        <small>Preview</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li></li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+	
+	 <!-- START ACCORDION & CAROUSEL-->
+     
+	   <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+               <h2 class="page-header"><SCRIPT language=JavaScript>var d = new Date();
+var h = d.getHours();
+if (h < 11) { document.write('Selamat pagi, <?=$_SESSION['namalengkap']?>...'); }
+else { if (h < 15) { document.write('Selamat siang, <?=$_SESSION['namalengkap']?>...'); }
+else { if (h < 19) { document.write('Selamat sore, <?=$_SESSION['namalengkap']?>...'); }
+else { if (h <= 23) { document.write('Selamat malam, <?=$_SESSION['namalengkap']?>...'); }
+}}}</SCRIPT>...</h2>
+
+<h1><div id="clockDisplay" class="clockStyle"></div>
+<script type="text/javascript" language="javascript">
+function renderTime(){
+ var currentTime = new Date();
+ var h = currentTime.getHours();
+ var m = currentTime.getMinutes();
+ var s = currentTime.getSeconds();
+ if (h == 0){
+  h = 24;
+   }
+   if (h < 10){
+    h = "0" + h;
+    }
+    if (m < 10){
+    m = "0" + m;
+    }
+    if (s < 10){
+    s = "0" + s;
+    }
+ var myClock = document.getElementById('clockDisplay');
+ myClock.textContent = h + ":" + m + ":" + s + "";    
+ setTimeout ('renderTime()',1000);
+ }
+ renderTime();
+</script></h1>
+              </div>
+	  
+
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box box-solid">
+            <div class="box-header with-border">
+              <h3 class="box-title">Sistem Manajemen <?php echo"$i[nama_identitas]"; ?> </h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box-group" id="accordion">
+                <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                <div class="panel box box-primary">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      PROFIL RASUNA SAID </a>                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="box-body">
+                     <P align="justify">Penyewaan Lapangan Futsal  Rasuna Said adalah sebuah gedung sarana olahraga futsal yang khusus dibangun di Jl. H. R. Rasuna Said No.22, RT.2/RW.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan. Seiring dengan berkembangnya olahraga futsal, ikut berkembang juga usaha penyewaan lapangan futsal untuk menampung konsumen yang ingin bermain futsal dikarenakan tidak mempunyai lapangan untuk bermain. </P>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel box box-danger">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        KINERJA SISTEM
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="box-body"><ol>
+	<li style="text-align: justify;">Laporan sewa dapat diambil secara otomatis berdasarkan harian,mingguan atau bulanan.</li>
+	<li style="text-align: justify;">Dapat mencetak nota-nota pembayaran secara otomatis.</li>
+	<li style="text-align: justify;">Pengelolaan data menjadi lebih mudah dan cepat dengan adanya tombol Tambah, Hapus, Edit, dan Simpan serta adanya tabel yang menampilkan data-data dari masing-masing form.</li>
+	<li style="text-align: justify;">Sudah terdapat fungsi pencarian untuk data-data pelanggan.</li>
+	<li style="text-align: justify;">Dapat memproses transaksi-transaksi secara komputer.</li>
+</ol>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="panel box box-success">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        INFORMASI
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="box-body">
+					  <ol>
+
+<li style="text-align: justify;">Hanya seorang admin yang dapat menge-set harga sewa lapangan.</li>
+<li style="text-align: justify;">Kualitas informasi untuk Data User, Data Data dan Setting Harga lebih aman karena hanya bisa dikelola oleh admin.</li>
+<li style="text-align: justify;">Untuk dapat mencetak nota, harus memasukkan data-data transaksi. Sehingga tidak mungkin dapat terjadi penggelapan uang.</li>
+<li style="text-align: justify;">Informasi-informasi yang di proses untuk mengeluarkan nota-nota pembayaran sesuai dengan data pemakaian lapangan..</li>
+<li style="text-align: justify;">Informasi untuk laporan pemasukan berasal dari transaksi pemakaian lapangan dan transaksi dari Data yang selalu tercatat pada database sistem.</li>
+<li style="text-align: justify;">Human error dalam proses penghitungan sudah tidak ada dengan adanya proses penghitungan yang otomatis oleh komputer.</li>               
+<li style="text-align: justify;">Dapat memproses transaksi-transaksi secara komputer.</li>
+</ol>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        
+		 <div class="col-md-6">
+              <!-- USERS LIST -->
+              <div class="box box-danger">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Anggota Baru </h3>
+
+                 
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <ul class="users-list clearfix">
+				  <?php
+				  $tampil = mysql_query("SELECT * FROM member WHERE level = 'user' AND username !='0' ORDER BY username ASC LIMIT 4");
+    while($r=mysql_fetch_array($tampil)){
+
+  
+	echo"<li>
+                      <img src='foto_user/user.png' alt='$r[nama_lengkap]'>
+                      <a class='users-list-name' href='#'>$r[nama_lengkap]</a>
+                      <span class='users-list-date'>$r[no_hp]</span>
+                    </li>
+                    ";
+	}
+				  ?>
+                   
+					
+                  </ul>
+                  <!-- /.users-list -->
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer text-center">
+				<?php
+				if ($_SESSION['level']=='admin'){
+				?>
+                  <a href="index.php?halamane=member&act=akun-member" class="uppercase">Lihat Semua Anggota</a>
+				  <?php
+				}
+				?>
+                </div>
+                <!-- /.box-footer -->
+              </div>
+              <!--/.box -->
+            </div>
+            <!-- /.col -->
+		
+		
+		
+      </div>
+      <!-- /.row -->
+      <!-- END ACCORDION & CAROUSEL-->
+	  
+	
+
+    </section>
+    <!-- /.content -->
+  
